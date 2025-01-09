@@ -878,8 +878,21 @@ header .container {
   .top__banner__content {
     width: 50%;
   }
+  .top__banner__content p:nth-child(2),
+  .banner__content p span:nth-child(2) {
+    color: rgb(204, 196, 0);
+    background: none;
+    background-clip: inherit;
+    -webkit-text-fill-color: inherit;
+    filter: none;
+  }
 }
 @media (max-width: 767px) {
+  .banner__content p {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
   .sidebar__footer {
     margin-top: 50px;
   }
