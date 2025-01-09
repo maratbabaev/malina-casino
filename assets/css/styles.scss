@@ -583,21 +583,40 @@ header {
 		url("/assets/images/triangle-pattern.webp");
 	background-size: cover, auto 42%;
 	background-position-x: 5%;
-	height: 182px;
+	height: 270px;
 	display: flex;
 	align-items: center;
-	padding: 20px 34px;
+	padding: 20px 64px;
 	position: relative;
+	@media (max-width: 1400px) {
+		height: 200px;
+		padding: 20px 34px;
+	}
+	@media (max-width: 1024px) {
+		height: 182px;
+	}
 }
 
 .banner__content {
 	display: flex;
 	flex-direction: column;
-	gap: 20px;
-	font-size: 20px;
+	gap: 30px;
+	font-size: 32px;
 	line-height: 1.2;
 	font-weight: 700;
+	@media (max-width: 1900px) {
+		font-size: 24px;
+		gap: 24px;
+	}
+	@media (max-width: 1024px) {
+		font-size: 20px;
+		gap: 18px;
+	}
 	p {
+		@media (max-width: 1900px) {
+			display: flex;
+			flex-direction: column;
+		}
 		span {
 			&:nth-child(2) {
 				background: linear-gradient(
@@ -615,15 +634,24 @@ header {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		height: 44px;
-		width: 220px;
+		height: 74px;
+		width: 290px;
 		font-weight: 700;
-		font-size: 16px;
+		font-size: 28px;
 		text-transform: uppercase;
 		text-align: center;
 		border-radius: 2px;
 		transition-duration: 0.2s;
 		color: rgb(255 255 255);
+		@media (max-width: 1900px) {
+			height: 58px;
+			width: 220px;
+			font-size: 18px;
+		}
+		@media (max-width: 1024px) {
+			height: 44px;
+			font-size: 16px;
+		}
 		&:hover {
 			background: rgb(105, 226, 0);
 		}
@@ -632,9 +660,24 @@ header {
 
 .banner__content__img {
 	position: absolute;
-	right: 20px;
-	top: -30px;
-	width: 566px;
+	inset-inline-end: 83px;
+	top: -51px;
+	width: 964px;
+	@media (max-width: 1900px) {
+		inset-inline-end: 7px;
+		top: -47px;
+		width: 850px;
+	}
+	@media (max-width: 1400px) {
+		inset-inline-end: 0;
+		top: -40px;
+		width: 700px;
+	}
+	@media (max-width: 1024px) {
+		top: -23px;
+		inset-inline-end: -42px;
+		width: 493px;
+	}
 }
 
 .content--wrap {
