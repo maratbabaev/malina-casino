@@ -682,6 +682,7 @@ header .container {
   font-size: 18px;
   line-height: 1.6;
 }
+.content__item h1,
 .content__item h2,
 .content__item h3 {
   font-size: 33px;
@@ -1032,6 +1033,7 @@ header .container {
   .content__item {
     font-size: 16px;
   }
+  .content__item h1,
   .content__item h2,
   .content__item h3 {
     font-size: 30px;
